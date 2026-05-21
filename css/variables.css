@@ -1,0 +1,27 @@
+/* Design Tokens System */
+:root {
+     /* Color Palette */
+     --clr-bg-dark: #0a090f;
+     --clr-bg-footer: #08070c;
+     --clr-text-main: #f3f1f6;
+     --clr-text-muted: #a09ca6;
+     
+     /* Acrylic Overlay States */
+     --glass-bg: rgba(255, 255, 255, 0.03);
+     --glass-border: rgba(255, 255, 255, 0.08);
+     --glass-border-glow: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.01));
+     
+     /* Aesthetic Watercolor Accents */
+     --accent-peach: #ffd3b6;
+     --accent-lavender: #d4c5f9;
+     --accent-rose: #ffaaa5;
+     --gradient-primary: linear-gradient(135deg, var(--accent-peach) 0%, var(--accent-lavender) 50%, var(--accent-rose) 100%);
+     
+     /* Typography Layout Rules */
+     --ff-heading: 'Playfair Display', serif;
+     --ff-body: 'Poppins', sans-serif;
+     --ff-alt: 'Inter', sans-serif;
+     
+     /* Global Easing Variables */
+     --transition-smooth: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+ }

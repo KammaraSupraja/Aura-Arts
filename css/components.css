@@ -1,0 +1,62 @@
+/* --- Reusable UI Elements --- */
+
+/* UI Elements: Buttons */
+.btn {
+     display: inline-block;
+     padding: 0.8rem 2rem;
+     font-family: var(--ff-alt);
+     font-size: 0.95rem;
+     font-weight: 500;
+     border-radius: 50px;
+     transition: var(--transition-smooth);
+     cursor: pointer;
+ }
+ .btn-primary {
+     background: var(--gradient-primary);
+     color: var(--clr-bg-dark);
+     border: none;
+     box-shadow: 0 4px 20px rgba(212, 197, 249, 0.3);
+ }
+ .btn-primary:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 8px 30px rgba(212, 197, 249, 0.5);
+ }
+ 
+ /* Base Component Glassmorphism Style Mixin */
+ .glassmorphism {
+     background: var(--glass-bg);
+     border: 1px solid var(--glass-border);
+     backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+     position: relative;
+ }
+ 
+ /* UI Structure: Interactive Cards */
+ .art-card {
+     border-radius: 24px;
+     padding: 3rem 2rem;
+     text-align: center;
+     transition: var(--transition-smooth);
+ }
+ .art-card:hover {
+     transform: translateY(-10px);
+     background: rgba(255, 255, 255, 0.06);
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ }
+ .card-icon-wrapper {
+     width: 70px;
+     height: 70px;
+     margin: 0 auto 2rem auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     background: rgba(255, 255, 255, 0.03);
+     border: 1px solid rgba(255,255,255,0.1);
+ }
+ .card-icon {
+     font-size: 1.5rem;
+     background: var(--gradient-primary);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }

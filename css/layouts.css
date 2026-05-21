@@ -1,0 +1,27 @@
+/* Flexbox & CSS Grid Design Modules */
+.container {
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 2rem;
+ }
+ 
+ .grid-layout {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+     gap: 2rem;
+ }
+ 
+ .split-layout {
+     display: flex;
+     align-items: center;
+     gap: 5rem;
+ }
+ 
+ @media (max-width: 768px) {
+     .split-layout {
+         flex-direction: column;
+         text-align: center;
+         gap: 4rem;
+     }
+ }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraArts | Creative Studio Portfolio</title>
+    
+    <!-- Design tokens and stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Navigation Header Component -->
+    <header class="navbar" data-module="navigation">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="AuraArts Home">Aura<span>Arts</span></a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item active" data-scroll-target="home">Home</a></li>
+                    <li><a href="#gallery" class="nav-item" data-scroll-target="gallery">Gallery</a></li>
+                    <li class="dropdown">
+                        <a href="#services" class="nav-item dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Services <i class="fas fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/pencil-sketches.html">Pencil Sketches</a></li>
+                            <li><a href="services/watercolor.html">Watercolor Paintings</a></li>
+                            <li><a href="services/pen-art.html">Pen Art</a></li>
+                            <li><a href="services/canvas-art.html">Canvas Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="nav-item" data-scroll-target="about">About</a></li>
+                    <li><a href="#contact" class="nav-item" data-scroll-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-controls="navMenu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Component -->
+        <section id="home" class="hero">
+            <div class="paint-blob blob-1" aria-hidden="true"></div>
+            <div class="paint-blob blob-2" aria-hidden="true"></div>
+            
+            <div class="hero-content container">
+                <h1 class="fade-in">Bring Imagination <br>to Life with <span class="gradient-text">AuraArts</span></h1>
+                <p class="fade-in delay-1">Transforming emotions into timeless artworks through sketches, colors, and raw creativity.</p>
+                <div class="fade-in delay-2">
+                    <a href="#gallery" class="btn btn-primary">Explore Gallery <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery / Dynamic Showcase Component -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Our Art Mediums</h2>
+                    <p>Explore the diverse realms of physical and visual poetry we craft.</p>
+                </header>
+                
+                <div class="grid-layout">
+                    <article class="art-card glassmorphism">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-pencil-alt card-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3>Pencil Sketches</h3>
+                        <p>Fine-tuned monochromatic realism capturing depth, shadows, and raw human emotion with precision graphite strokes.</p>
+                    </article>
+
+                    
+                    <article class="art-card glassmorphism">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-palette card-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3>Watercolor Art</h3>
+                        <p>Vibrant yet ethereal fluid blendings on premium cotton paper, bringing dreamy landscapes and botanicals to life.</p>
+                    </article>
+
+                
+                    <article class="art-card glassmorphism">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-pen-nib card-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3>Pen Illustrations</h3>
+                        <p>Intricate cross-hatching, stippling, and continuous line-art mapping out complex conceptual storytelling.</p>
+                    </article>
+
+                    
+                    <article class="art-card glassmorphism">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-paint-brush card-icon" aria-hidden="true"></i>
+                        </div>
+                        <h3>Canvas Paintings</h3>
+                        <p>Bold physical textures, mixed-media palettes, and energetic movements layered elegantly onto wide canvases.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+       
+    
+
+        <section id="about" class="section alt-bg">
+            <header class="section-header">
+                <h2>About</h2>
+                </header>
+            <div class="container split-layout">
+                <div class="layout-visual">
+                    <div class="placeholder-art" role="img" aria-label="AuraArts Studio abstract background canvas" ><img src="images/background-canvas.jpg" width="600" height="400" border-radius="12px"></div>
+                </div>
+                
+                <div class="layout-content">
+                    <span class="sub-heading">The Studio</span>
+                    <h2>Where Passion Meets Canvas</h2>
+                    <p>AuraArts is a creative studio dedicated to handcrafted artworks, expressive paintings, and personalized sketches designed with passion and imagination.</p>
+                    <p>We believe every blank canvas holds a secret whisper. Our team of independent creators works meticulously across physical mediums to convert personal memories and beautiful moments into premium aesthetic spaces.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Aura<span>Arts</span></a>
+                
+                <div class="social-cluster">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4 >Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <address>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> hello@auraarts.com</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Tadipatri,Anantapur District</p>
+                </address>
+            </div>
+        </div>
+        
+        <div class="footer-bottom container">
+            <p>Copyright &copy; 2026 AuraArts. All Rights Reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
