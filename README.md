@@ -22,7 +22,7 @@ AuraArts/
 │   ├── components.css    # Reusable UI Elements (Buttons, image frames, badges)
 │   └── main.css          # Master File (Imports all other style sheets together)
 └── images/               # Local Image Assets (Hero background, sketch portfolio)
-
+---
 ## 🛠️ Tech Stack & Architecture Applied
 
 *   **Structure:** HTML5 using semantic elements (`<header>`, `<main>`, `<section>`, `<footer>`) to ensure clean accessibility and search engine optimization.
