@@ -50,30 +50,3 @@ AuraArts/
 │   ├── components.css    # Reusable UI Elements (Buttons, image frames, badges)
 │   └── main.css          # Master File (Imports all other style sheets together)
 └── images/               # Local Image Assets (Hero background, sketch portfolio)
----
-## 🛠️ Tech Stack & Architecture Applied
-
-*   **Structure:** HTML5 using semantic elements (`<header>`, `<main>`, `<section>`, `<footer>`) to ensure clean accessibility and search engine optimization.
-*   **Styling Architecture:** **Modular CSS3** broken down into specific files (`variables.css`, `layouts.css`, `components.css`) to maintain scalable, clean code.
-*   **Layout Techniques:** CSS Flexbox and Grid for aligning items dynamically, along with CSS Custom Properties (Variables) for unified color themes.
-*   **Responsive Engine:** Built-in CSS Media Queries optimized for seamless desktop and mobile device views.
-
----
-
-## 🚀 How to Run and Test Locally
-
-Follow these straightforward steps to run this project on your local machine:
-
-1. **Clone the Repository:**
-   Open your terminal or command prompt and clone the project using Git:
-   ```bash
-   git clone [https://github.com/KammaraSupraja/Aura-Arts.git](https://github.com/KammaraSupraja/Aura-Arts.git)
-2. **Navigate into the Project Folder:**
-    ```bash
-   cd AuraArts
-3. **Launch the Webpage:**
-   * **Option A (Simplest):** Go to your file explorer, navigate to the folder, and double-click the `index.html` file to open it instantly in your default web browser.
-   * **Option B (Recommended for Development):** If you are using Visual Studio Code, install the **Live Server** extension. Right-click anywhere inside `index.html` and select **"Open with Live Server"** to view your changes update in real-time as you save your code.
-
-4. **Test the Responsive Layout:**
-   Once open in your browser, press `F12` (or `Cmd + Option + I` on a Mac) and click the device icon to toggle into **Mobile View** to test the screen responsive configurations.
