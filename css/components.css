@@ -60,3 +60,277 @@
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
  }
+
+/* Centering container for the form */
+.contact-section {
+    padding: 8rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background: #f0eef5;
+}
+
+/* Glassmorphism Form Card Container */
+.form-container {
+    background: rgba(4, 4, 4, 0.8);
+    border: 1px solid rgba(212, 197, 249, 0.15);
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-container h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-container p {
+    color: #a09ca6;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+.site-footer{
+    background-color:grey;
+}
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #d4c5f9;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(212, 197, 249, 0.25);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+}
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ffd3b6; /* Warm pastel orange highlight */
+    box-shadow: 0 0 8px rgba(255, 211, 182, 0.2);
+}
+.input-group.success-state input,
+.input-group.success-state textarea {
+    border-color: #2ecc71;
+    box-shadow: 0 0 6px rgba(46, 204, 113, 0.15);
+}
+.input-group.error-state input,
+.input-group.error-state textarea {
+    border-color: #e74c3c;
+    box-shadow: 0 0 6px rgba(231, 76, 60, 0.15);
+}
+
+.input-group .error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    display: none;
+    margin-top: 0.4rem;
+}
+
+.input-group.error-state .error-message {
+    display: block;
+}
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background:grey;
+    border: none;
+    border-radius: 6px;
+    color: #0a090f;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.success-alert {
+    display: none;
+    background: rgba(46, 204, 113, 0.1);
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+   .about-page-wrapper {
+    background: #f0eef5;
+    color: #2d2a3a;
+    font-family: inherit;
+}
+
+.about-page-wrapper .badge {
+    background: rgba(214, 197, 249, 0.4);
+    color: #4a3b70;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #1a1726;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    color: #655e7a;
+}
+
+/* --- Artist Bio Layout Block --- */
+.about-hero-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    max-width: 1100px;
+    width: 100%;
+    align-items: center;
+}
+
+.about-text-block h2 {
+    font-size: 2.5rem;
+    color: #1a1726;
+    margin: 1rem 0;
+}
+
+.studio-card-container .lead-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4d1dc7;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.about-text-block p  {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Fact blocks wrapper */
+.quick-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.fact-item {
+    background: #ffffff;
+    border: 1px solid #d4c5f9;
+    padding: 0.2rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.profile-frame {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d4c5f9;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Dedicated Studio Narrative Section --- */
+.studio-profile-section {
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.studio-card-container {
+    background: #ffffff;
+    border: 1px solid #d4c5f9;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 1100px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(4, 3, 3, 0.03);
+}
+
+.studio-card-container h3 {
+    font-size: 1.8rem;
+    color: #1a1726;
+    margin: 1rem 0;
+}
+
+.studio-card-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4e485c;
+    margin-bottom: 1.2rem;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .about-grid-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .quick-facts-grid {
+        grid-template-columns: 1fr;
+    }
+    .studio-card-container {
+        padding: 2rem;
+    }
+}
