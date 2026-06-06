@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions Dashboard | AuraArts</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Contextual custom styles specifically to display dashboard cards nicely */
+        .submissions-section { padding: 4rem 2rem; max-width: 800px; margin: 80px auto min-height: 80vh; }
+        .dashboard-title { font-size: 2.5rem; margin-bottom: 2rem; color: #fff; text-align: center; font-family: sans-serif; }
+        #submissionsContainer { display: flex; flex-direction: column; gap: 1.5rem; }
+        .submission-card { background: #1a1a24; border-radius: 12px; padding: 1.5rem; border: 1px solid #2d2d3d; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #2d2d3d; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        .card-header h3 { margin: 0; color: #a4b3e6; font-size: 1.25rem; }
+        .timestamp { font-size: 0.85rem; color: #7c7c93; }
+        .email { margin: 0 0 0.75rem 0; color: #cfcfdf; font-size: 0.95rem; }
+        .email a { color: #5171e6; text-decoration: none; }
+        .message { margin: 0; color: #b5b5c9; font-style: italic; line-height: 1.5; background: #12121a; padding: 1rem; border-radius: 6px; }
+        .no-submissions { text-align: center; color: #7c7c93; padding: 3rem; background: #1a1a24; border-radius: 12px; }
+    </style>
+</head>
+<body>
+
+    <main class="submissions-section">
+        <h1 class="dashboard-title">Inbox Messages</h1>
+        
+        <div id="submissionsContainer"></div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="nav-item" style="color: #a4b3e6; text-decoration: none;"><i class="fas fa-arrow-left"></i> Back to Studio Home</a>
+        </div>
+    </main>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
