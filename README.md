@@ -7,6 +7,9 @@ A highly organized, responsive, and performance-optimized digital portfolio buil
 *   **Modular CSS Architecture:** Styles are cleanly split into dedicated files based on their responsibilities (variables, layouts, and components) to ensure the code remains scalable and easy to maintain.
 *   **Atmospheric Visual Theme:** Features a premium look using custom color tokens, rounded card frames, and text-dimming overlays over the background hero image to maintain high contrast.
 *   **Fully Responsive Layout:** Designed from the ground up to adapt perfectly across desktop displays, tablets, and mobile device views.
+*   **Client-Side Validation Engine:** Live, event-driven contact form validation using vanilla JavaScript to check inputs in real time, prevent empty or invalid submissions, and manage clean UI success/error states.
+*   **Persistent LocalStorage State:** Automatically preserves form drafts mid-typing to protect user progress from accidental page refreshes. Upon a valid submission, entries are permanently pushed into a locally stored data array stack.
+*   **Dedicated Submissions Dashboard:** A dedicated multi-page dashboard view that extracts, parses, and safely handles HTML-escaped text submissions directly from browser memory to display back to the user.
 *   **Optimized Images:** Implements smart CSS image fitting rules (`object-fit: cover`) and native performance enhancements to keep page loading snappy.
 
 
@@ -15,6 +18,7 @@ A highly organized, responsive, and performance-optimized digital portfolio buil
 *   **Structure:** HTML5 using semantic elements (`<header>`, `<main>`, `<section>`, `<footer>`) to ensure clean accessibility and search engine optimization.
 *   **Styling Architecture:** **Modular CSS3** broken down into specific files (`variables.css`, `layouts.css`, `components.css`) to maintain scalable, clean code.
 *   **Layout Techniques:** CSS Flexbox and Grid for aligning items dynamically, along with CSS Custom Properties (Variables) for unified color themes.
+*   **Behavioral & Storage Layer:** Client-side **Vanilla JavaScript (ES6+)** running an event-driven telemetry engine. Implements custom regex patterns for contact validation, data serialization into a local JSON collection database via browser `localStorage`, and defensive lifecycle hooks (`DOMContentLoaded`) to prevent cross-page parsing crashes
 *   **Responsive Engine:** Built-in CSS Media Queries optimized for seamless desktop and mobile device views.
 
 ---
@@ -43,10 +47,20 @@ Follow these straightforward steps to run this project on your local machine:
 
 ```text
 AuraArts/
-├── index.html            # Main Webpage Shell & Structural Content
+├── index.html                  # Core Portfolio Shell & Curated Art Gallery
+├── about.html                  # About the Artist & Creative Vision Profile
+├── contact.html                # Interactive Communication Form with Live Validation
+├── submissions.html            # Multi-page LocalStorage Inbox Messages Dashboard View
 ├── css/
-│   ├── variables.css     # Design Tokens (Color palettes, fonts, transitions)
-│   ├── layouts.css       # Core Page Structure (Hero section, global spacing, grids)
-│   ├── components.css    # Reusable UI Elements (Buttons, image frames, badges)
-│   └── main.css          # Master File (Imports all other style sheets together)
-└── images/               # Local Image Assets (Hero background, sketch portfolio)
+│   ├── variables.css           # Design Tokens (Color tokens, font typography, transitions)
+│   ├── layouts.css             # Main Layouts (Responsive headers, structural sections, grids)
+│   ├── components.css          # Reusable UI Components (Action buttons, form inputs, dynamic cards)
+│   └── main.css                # Master Manifest Stylesheet (Aggregates modular design layouts)
+├── js/
+│   └── validation.js           # Safe Universal Interaction & Client-Side Validation Engine
+├── services/                   # Nested Specialized Art Service Profiles
+│   ├── canvas-art.html         # Acrylic & Canvas Painting Collections
+│   ├── pen-art.html            # Intricate Ink & Pen Line Art Showcase
+│   ├── pencil-sketches.html    # Traditional Graphite & Charcoal Sketch Gallery
+│   └── watercolor.html         # Fluid Watercolor Fine Art Studies
+└── images/                     # Curated Local Portfolio Visual Media Assets
